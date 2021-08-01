@@ -1,6 +1,6 @@
 import { Home } from '@view'
 
-function Index() {
+function Index(): JSX.Element {
   return <Home />
 }
 

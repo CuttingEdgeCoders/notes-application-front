@@ -1,6 +1,6 @@
 import { Wrapper } from '@components'
 
-function Home() {
+function Home(): JSX.Element {
   return (
     <section>
       <Wrapper>
