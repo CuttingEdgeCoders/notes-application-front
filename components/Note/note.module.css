@@ -1,0 +1,8 @@
+.container {
+  @apply max-w-lg flex-grow p-4 border border-gray-200 hover:border-gray-300 transition duration-200 hover:shadow-sm cursor-pointer rounded-md;
+  flex-basis: 320px;
+}
+
+.title {
+  @apply font-medium text-2xl mb-4;
+}

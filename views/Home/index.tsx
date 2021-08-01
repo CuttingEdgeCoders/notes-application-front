@@ -1,11 +1,11 @@
-import { Wrapper } from '@components'
+import { NoteList, Wrapper } from '@components'
 
-function Home() {
+function Home(): JSX.Element {
   return (
     <section>
       <Wrapper>
         <div>
-          <p>Hola mundo</p>
+          <NoteList />
         </div>
       </Wrapper>
     </section>
