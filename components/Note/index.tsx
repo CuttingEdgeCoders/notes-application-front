@@ -5,11 +5,14 @@ import styles from './note.module.css'
 
 // types
 import type { ChangeEvent } from 'react'
+export interface Props {
+  initialDescription: string
+}
 
-function Note(): JSX.Element {
+function Note({ initialDescription }: Props): JSX.Element {
   // states
   const [isEditMode, setIsEditMode] = useState(false)
-  const [description, setDescription] = useState('Hola mundo')
+  const [description, setDescription] = useState(initialDescription)
   const descriptionRef = useRef<HTMLInputElement>(null)
 
   // helper functions
@@ -38,7 +41,7 @@ function Note(): JSX.Element {
       </div>
 
       <div className={styles.body} onDoubleClick={handleChangeToEditMode}>
-        {isEditMode ? (
+        {isEditMode || !description ? (
           <input
             autoFocus
             className={styles.descriptionInput}
@@ -48,6 +51,7 @@ function Note(): JSX.Element {
             ref={descriptionRef}
             type="text"
             value={description}
+            name="description"
           />
         ) : (
           <p>{description}</p>
