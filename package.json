@@ -1,5 +1,5 @@
 {
-  "name": "notes",
+  "name": "notes-application",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,7 @@
     "prepare": "husky install",
     "start": "next start",
     "test:watch": "jest --watch",
-    "test": "jest --bail"
+    "test": "jest --bail --passWithNoTests"
   },
   "dependencies": {
     "next": "11.0.1",
@@ -47,5 +47,22 @@
     "tailwindcss": "^2.2.7",
     "ts-node": "^10.1.0",
     "typescript": "^4.3.5"
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "pages/index.tsx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CuttingEdgeCoders/notes-application-front.git"
+  },
+  "keywords": [
+    "nextjs",
+    "react",
+    "notes"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CuttingEdgeCoders/notes-application-front/issues"
+  },
+  "homepage": "https://github.com/CuttingEdgeCoders/notes-application-front#readme"
 }

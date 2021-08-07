@@ -43,6 +43,7 @@ function Note({ initialDescription }: Props): JSX.Element {
       <div className={styles.body} onDoubleClick={handleChangeToEditMode}>
         {isEditMode || !description ? (
           <input
+            // eslint-disable-next-line jsx-a11y/no-autofocus
             autoFocus
             className={styles.descriptionInput}
             onBlur={handleBlur}
