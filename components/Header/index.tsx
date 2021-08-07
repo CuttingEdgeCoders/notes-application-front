@@ -13,7 +13,7 @@ function Header(): JSX.Element {
     <header className={styles.container}>
       <Wrapper>
         <h1>
-          <Link href={Routes.HOME}>Notes Application</Link>
+          <Link href={Routes.HOME}>Notes</Link>
         </h1>
       </Wrapper>
     </header>

@@ -3,6 +3,25 @@
   flex-basis: 320px;
 }
 
+.header {
+  @apply mb-4;
+}
+
 .title {
-  @apply font-medium text-2xl mb-4;
+  @apply font-medium text-2xl;
+}
+
+.date {
+  @apply text-gray-400;
+}
+
+.description {
+  @apply leading-7;
+}
+
+.descriptionInput {
+  @apply w-full outline-none;
+}
+
+.body {
 }

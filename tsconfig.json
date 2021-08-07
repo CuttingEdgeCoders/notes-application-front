@@ -18,8 +18,15 @@
       "@views": ["views"],
       "@components": ["components"],
       "@constants": ["./constants"]
-    }
+    },
+    "downlevelIteration": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "jest.config.ts",
+    "setupTests.ts"
+  ],
   "exclude": ["node_modules"]
 }
